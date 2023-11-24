@@ -9,7 +9,7 @@ const Area = () => {
   });
 
   useEffect(() => {
-    fetch('https://server-front-ochre.vercel.app/api/area')
+    fetch('https://server-sigma-peach.vercel.app/api/area')
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
