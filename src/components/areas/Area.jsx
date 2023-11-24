@@ -34,7 +34,7 @@ const Area = () => {
     formDataToSend.append('name', formData.name);
     formDataToSend.append('file', formData.file);
 
-    fetch('https://server-front-ochre.vercel.app/api/area/upload', {
+    fetch('https://server-sigma-peach.vercel.app/api/area/upload', {
       method: 'POST',
       body: formDataToSend,
     })
@@ -46,7 +46,7 @@ const Area = () => {
   };
 
   const handleDelete = (id, index) => {
-    fetch(`https://server-front-ochre.vercel.app/api/area/delete/${id}`)
+    fetch(`https://server-sigma-peach.vercel.app/api/area/delete/${id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
