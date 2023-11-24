@@ -13,7 +13,7 @@ const EditableArea = ({ area}) => {
     const handleConfirm = (id,name) => {
         console.log(id,name)
       // Make API call to update the name in the database
-      fetch(`http://localhost:4000/api/area/update/${id}`, {
+      fetch(`https://server-kqgsj5o29-siddiqam1.vercel.app/api/area/update/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
