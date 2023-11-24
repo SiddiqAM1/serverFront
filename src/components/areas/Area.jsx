@@ -9,7 +9,7 @@ const Area = () => {
   });
 
   useEffect(() => {
-    fetch('https://server-kqgsj5o29-siddiqam1.vercel.app/api/area')
+    fetch('https://server-front-ochre.vercel.app/api/area')
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -34,7 +34,7 @@ const Area = () => {
     formDataToSend.append('name', formData.name);
     formDataToSend.append('file', formData.file);
 
-    fetch('http://localhost:4000/api/area/upload', {
+    fetch('https://server-front-ochre.vercel.app/api/area/upload', {
       method: 'POST',
       body: formDataToSend,
     })
@@ -46,7 +46,7 @@ const Area = () => {
   };
 
   const handleDelete = (id, index) => {
-    fetch(`http://localhost:4000/api/area/delete/${id}`)
+    fetch(`https://server-front-ochre.vercel.app/api/area/delete/${id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
