@@ -9,7 +9,7 @@ const Area = () => {
   });
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/area')
+    fetch('https://server-kqgsj5o29-siddiqam1.vercel.app/api/area')
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
