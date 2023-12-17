@@ -39,10 +39,12 @@ const Area = () => {
       body: formDataToSend,
     })
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        setFormData({ name: '', file: null });
+        console.log(data)
+      })
       .catch((error) => console.error('Error:', error));
 
-    setFormData({ name: '', file: null });
   };
 
   const handleDelete = (id, index) => {
