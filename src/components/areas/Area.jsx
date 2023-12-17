@@ -81,6 +81,7 @@ const Area = () => {
               type="file"
               id="file"
               name="file"
+              value={formData.file}
               onChange={handleFileChange}
             />
           </div>
