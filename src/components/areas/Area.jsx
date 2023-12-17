@@ -45,7 +45,7 @@ const Area = () => {
         
       })
       .catch((error) => console.error('Error:', error));
-
+        e.target["file"].value=""
   };
 
   const handleDelete = (id, index) => {
