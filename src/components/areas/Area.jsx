@@ -40,8 +40,9 @@ const Area = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        setFormData({ name: '', file: null });
         console.log(data)
+        setFormData({ name: '', file: null });
+        
       })
       .catch((error) => console.error('Error:', error));
 
