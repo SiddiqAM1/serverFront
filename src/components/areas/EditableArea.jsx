@@ -13,7 +13,7 @@ const EditableArea = ({ area}) => {
     const handleConfirm = (id,name) => {
         console.log(id,name)
       // Make API call to update the name in the database
-      fetch(`https://server-sigma-peach.vercel.app/api/area/update/${id}`, {
+      fetch(`http://ec2-3-29-139-74.me-central-1.compute.amazonaws.com:4000/api/area/update/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
