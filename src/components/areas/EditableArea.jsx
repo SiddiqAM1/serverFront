@@ -6,9 +6,9 @@ const EditableArea = ({ area }) => {
   const [editMode, setEditMode] = useState(false);
   const [editedArea, setEditedArea] = useState({
     name: area.name,
-    BrochureLink: area.BrochureLink,
-    VideoLink: area.VideoLink,
-    Description: area.Description
+    BrochureLink: area.brochureLink,
+    VideoLink: area.videoLink,
+    Description: area.description
   });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
